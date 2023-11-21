@@ -3,13 +3,7 @@
 // Function to show more information on the home page
 function showMoreInfo() {
     var moreInfo = document.getElementById('more-info');
-    var profileInfo = document.getElementById('profile-info');
-
-    moreInfo.style.display = 'block';
-    profileInfo.style.display = 'none';
-
-    // Add a class to toggle visibility with smooth scroll
-    document.getElementById('home').classList.add('expand');
+    moreInfo.style.display = (moreInfo.style.display === 'none' || moreInfo.style.display === '') ? 'block' : 'none';
 }
 
 // Function to show experience details
@@ -71,16 +65,7 @@ function showExperienceDetails(companyName) {
 // Function to show more information about yourself
 function showProfileInfo() {
     var profileInfo = document.getElementById('profile-info');
-    var moreInfo = document.getElementById('more-info');
-
-    profileInfo.style.display = 'block';
-    moreInfo.style.display = 'none';
-
-    // Add a class to toggle visibility with smooth scroll
-    document.getElementById('home').classList.add('expand');
-
-    // Scroll to the bottom with smooth transition
-    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+   profileInfo.style.display = (profileInfo.style.display === 'none' || profileInfo.style.display === '') ? 'block' : 'none';
 }
 
 // Function to send a message using the contact form

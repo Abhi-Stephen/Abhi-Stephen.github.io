@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scrip.js" defer></script>
+    <style>
+        /* Internal CSS for Home Page */
+        #home {
+            background-color: #f0f0f0;
+            padding: 30px;
+        }
+        header {
+            background-color: grey;
+            color: rgb(9, 0, 0);
+            text-align: center;
+            padding: 10px;
+        }
+        #more-info, #profile-info {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd; /* Light Gray Border */
+            border-radius: 8px;
+            background-color: #e6f7ff; /* White Background */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #more-info p, #profile-info p {
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>Your Name - Home</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+</head>
+<body>
+    <header>
+        <h1>My Profile</h1>
+        <!-- You can add a subtitle or description here -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page Content -->
+    
+    <section id="home">
+        <div>
+            <h1>Abhi Stephen Rokkam</h1>
+             
+            <img src="Picture.jpg" alt="Your Picture" id="profile-picture" onclick="showProfileInfo()">
+            <p>Welcome to my portfolio! I am passionate about Exploring innovative solutions to complex problems and turning ideas into reality</p><br>
+            <button onclick="showMoreInfo()">Show More</button>
+        </div>
+        <div id="profile-info" style="display: none;">
+            
+            <p>I am Graduate student in computer science, aspiring to merge academic insights with hands-on experience to build a robust programming foundation. Focused on problem-solving and creative thinking to excel as a software developer and drive innovation in the tech sector. Moreover, have experience as a software engineer at Accenture in the field of SAP SD (Sales and Distribution) and Automation testing using Tosca.</p>
+            
+            <br>
+        </div>
+        <div id="more-info" style="display: none;">
+            <p>More specific information about myself or something I am interested is I find joy in playing the keyboard, showcasing my musical creativity. On weekends, you'll often find me on the cricket field, where I passionately play the sport. Additionally, I have a profound love for music, spending time listening to a diverse range of genres.</p><br>
+            <br>
+        </div>
+    </section>
+    <!-- Add this code at the end of each HTML file -->
+    
+<!-- Footer -->
+<!-- Add this code at the end of each HTML file -->
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 Abhi Stephen Rokkam</p>
+    <p><a href="https://www.linkedin.com/in/abhi-stephen-5b6b8a243/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+</footer>
+
+
+
+</body>
+</html>
